@@ -1,0 +1,13 @@
+<p>getinputvalue works!</p>
+
+<input 
+(input)="handleChange($event)"
+value="{{username}}"
+ type="text"
+ #userNameField
+  placeholder="get username" />
+<br /><br />
+<button (click)="setUsername()">set Username</button>
+<button (click)="getUsernameWithTemplate(userNameField.value)" >get Username</button>
+
+<p>show Username: {{ name }}</p>

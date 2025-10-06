@@ -1,0 +1,28 @@
+<p>ifelsecondition works!</p>
+
+@if(display){
+<div style="background-color: green; height: 50px; width: 50px;">
+
+</div>
+}
+<button (click)="toggle()">{{display ? "Hide":"Show"}}</button>
+
+
+@if(val>5){
+<div style="background-color: gold; height: 50px; width: 50px;">
+
+</div>
+}
+<button (click)="hide()">Hide</button>
+
+<hr>
+<hr>
+@if(display){
+
+    <div style="background-color: blue; height: 100px; width: 100px;"></div>
+}
+@else {
+
+    <div style="background-color: aqua; height: 100px; width: 100px;"></div>
+}
+

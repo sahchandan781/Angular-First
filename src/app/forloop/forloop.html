@@ -1,0 +1,12 @@
+<h1>For Lopp in Angular!</h1>
+@for(user of users; track user){
+<h1>{{user}}</h1>
+}
+
+<hr>
+@for(employee of employees; track employee;let id= $index){
+    <p><span>{{id}}.   </span>{{employee.name}}  {{employee.age}} {{employee.email}}</p>
+    <button (click)="getName(employee.name)">Get name</button>
+    
+}
+

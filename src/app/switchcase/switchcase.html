@@ -1,0 +1,31 @@
+<p>switchcase works!</p>
+
+
+<h1>Switch case in angular 20</h1>
+
+@switch(color1){
+    @case('red'){
+        <h1 style="background-color: red;">Red color</h1>
+    }
+    @case('blue'){
+        <h1 style="background-color:blue; ">Blue color</h1>
+    }
+    @default {
+        <h1 style="background-color: orange;">
+            Default color
+        </h1>
+    }
+
+}
+
+
+<button (click)="handleColorSwitch('red')">red</button>
+<button (click)="handleColorSwitch('gold')">gold</button>
+<button (click)="handleColorSwitch('blue')">blue</button>
+<button (click)="handleColorSwitch('black')">black</button>
+
+<h1 [style.background-color]="color1" style="color: white;">color combination</h1>
+
+
+
+<input type="text" (input)="handleColor($event)" placeholder="Enter color">
