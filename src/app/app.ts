@@ -5,11 +5,12 @@ import { StyleOptions } from "./style-options/style-options";
 import { Ifelsecondition } from './ifelsecondition/ifelsecondition';
 import { Switchcase } from "./switchcase/switchcase";
 import { Forloop } from "./forloop/forloop";
+import { Signalsinangular } from "./signalsinangular/signalsinangular";
 
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Getinputvalue, StyleOptions, Ifelsecondition, Switchcase, Forloop],
+  imports: [RouterOutlet, Getinputvalue, StyleOptions, Ifelsecondition, Switchcase, Forloop, Signalsinangular],
   templateUrl: './app.html',
   styleUrl: './app.css',
 })
