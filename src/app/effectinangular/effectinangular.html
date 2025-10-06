@@ -1,0 +1,15 @@
+
+<hr><hr>
+<h1>effect in angular</h1>
+
+<h2>UserName:  {{userName()}}</h2>
+
+<button (click)="userName.set('sam')">Update Username</button>
+
+<h2>Counter : {{count()}}</h2>
+
+<button (click)="count.set(count() + 1)">Increment count</button>
+
+@if(displaydiv) {
+    <div style="background-color: green; width: 100px; height: 100px;"></div>
+}

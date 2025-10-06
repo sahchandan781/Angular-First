@@ -6,11 +6,12 @@ import { Ifelsecondition } from './ifelsecondition/ifelsecondition';
 import { Switchcase } from "./switchcase/switchcase";
 import { Forloop } from "./forloop/forloop";
 import { Signalsinangular } from "./signalsinangular/signalsinangular";
+import { Effectinangular } from "./effectinangular/effectinangular";
 
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Getinputvalue, StyleOptions, Ifelsecondition, Switchcase, Forloop, Signalsinangular],
+  imports: [RouterOutlet, Getinputvalue, StyleOptions, Ifelsecondition, Switchcase, Forloop, Signalsinangular, Effectinangular],
   templateUrl: './app.html',
   styleUrl: './app.css',
 })
