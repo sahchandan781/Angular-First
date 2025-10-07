@@ -1,0 +1,16 @@
+<div>
+<h1>To-Do Lists</h1>
+<input [(ngModel)] = "task" type="text" placeholder="Enter task name">
+<button (click)="handleAddTask()">Add Task</button>
+@for(list of taskList; track list.id){
+<ul>
+    <h3>{{list.id}}</h3>
+    <li>{{list.taskName}} </li>
+    <button (click)="handleCompletion(list.id)">done</button>
+</ul>
+    
+}@empty {
+    <h3>No task available</h3>
+}
+
+</div>
