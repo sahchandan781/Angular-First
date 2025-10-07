@@ -10,11 +10,14 @@ import { Effectinangular } from "./effectinangular/effectinangular";
 import { LoopContextual } from "./loop-contextual/loop-contextual";
 import { TwoWayBinding } from "./two-way-binding/two-way-binding";
 import { Todolist } from "./todolist/todolist";
+import { About } from "./about/about";
+import { Header } from "./header/header";
+
 
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Getinputvalue, StyleOptions, Ifelsecondition, Switchcase, Forloop, Signalsinangular, Effectinangular, LoopContextual, TwoWayBinding, Todolist],
+  imports: [Getinputvalue, StyleOptions, Ifelsecondition, Switchcase, Forloop, Signalsinangular, Effectinangular, LoopContextual, TwoWayBinding, Todolist, Header],
   templateUrl: './app.html',
   styleUrl: './app.css',
 })
