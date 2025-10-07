@@ -8,11 +8,12 @@ import { Forloop } from "./forloop/forloop";
 import { Signalsinangular } from "./signalsinangular/signalsinangular";
 import { Effectinangular } from "./effectinangular/effectinangular";
 import { LoopContextual } from "./loop-contextual/loop-contextual";
+import { TwoWayBinding } from "./two-way-binding/two-way-binding";
 
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Getinputvalue, StyleOptions, Ifelsecondition, Switchcase, Forloop, Signalsinangular, Effectinangular, LoopContextual],
+  imports: [RouterOutlet, Getinputvalue, StyleOptions, Ifelsecondition, Switchcase, Forloop, Signalsinangular, Effectinangular, LoopContextual, TwoWayBinding],
   templateUrl: './app.html',
   styleUrl: './app.css',
 })
