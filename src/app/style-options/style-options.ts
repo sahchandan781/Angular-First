@@ -7,5 +7,13 @@ import { Component } from '@angular/core';
   styleUrl: './style-options.css'
 })
 export class StyleOptions {
+color ="green"
+zoom = true;
+fontNormal = '40px';
+fontSizeBig = "100px"
 
+
+zoomToggle() {
+this.zoom = !this.zoom
+}
 }
