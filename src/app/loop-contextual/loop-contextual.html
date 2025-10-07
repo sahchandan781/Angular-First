@@ -1,0 +1,20 @@
+<h1>loop-contextual works!</h1>
+
+@for(user of users; track user){
+    
+    <!-- @if($first || $last){
+        <h4 style="background-color: green;"><span>This is User no. {{$index + 1}}</span>{{user}}</h4>
+    } @else {
+        <h4><span>This is User no. {{$index + 1}}</span>{{user}}</h4>
+    } -->
+    
+    @if($even){
+        <h4 style="background-color: green;"><span>This is User no. {{$index +1}} </span>{{user}}</h4>
+    }@else if ($odd) {
+        <h4 style="background-color: goldenrod;"><span>This is User no. {{$index +1 }} </span>{{user}}</h4>
+    }
+
+}
+@empty {
+    <h4>No record found</h4>
+}
