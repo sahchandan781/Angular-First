@@ -4,9 +4,14 @@
 }
 
 <hr>
-@for(employee of employees; track employee;let id= $index){
+<!-- @for(employee of employees; track employee;let id= $index){
     <p><span>{{id}}.   </span>{{employee.name}}  {{employee.age}} {{employee.email}}</p>
     <button (click)="getName(employee.name)">Get name</button>
     
+} -->
+
+
+@for(employee of employees; track employee.id){
+    <li><a routerLink="user/{{employee.id}}"><span>{{employee.id}}</span> employee:{{employee.name}}</a></li>
 }
 

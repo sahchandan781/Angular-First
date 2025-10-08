@@ -1,23 +1,13 @@
-import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import { Getinputvalue } from './getinputvalue/getinputvalue';
-import { StyleOptions } from "./style-options/style-options";
-import { Ifelsecondition } from './ifelsecondition/ifelsecondition';
-import { Switchcase } from "./switchcase/switchcase";
-import { Forloop } from "./forloop/forloop";
-import { Signalsinangular } from "./signalsinangular/signalsinangular";
-import { Effectinangular } from "./effectinangular/effectinangular";
-import { LoopContextual } from "./loop-contextual/loop-contextual";
-import { TwoWayBinding } from "./two-way-binding/two-way-binding";
-import { Todolist } from "./todolist/todolist";
-import { About } from "./about/about";
+import { Component } from '@angular/core';
+
 import { Header } from "./header/header";
+
 
 
 
 @Component({
   selector: 'app-root',
-  imports: [Getinputvalue, StyleOptions, Ifelsecondition, Switchcase, Forloop, Signalsinangular, Effectinangular, LoopContextual, TwoWayBinding, Todolist, Header],
+  imports: [Header, ],
   templateUrl: './app.html',
   styleUrl: './app.css',
 })

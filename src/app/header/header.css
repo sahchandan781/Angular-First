@@ -24,6 +24,7 @@ ul{
     font-weight: 10;
     margin-right: 100px;
     cursor: pointer;
+    align-items: center;
 }
 header ul li{
     transition: color 0.3s ease, transform 0.2s ease;
@@ -45,4 +46,9 @@ li:hover{
     gap: 1rem;
     margin-top: 1rem;
   }
+}
+.active{
+    background-color: red;
+    padding: 8px;
+    border-radius: 5px;
 }
