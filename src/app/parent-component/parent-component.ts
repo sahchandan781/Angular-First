@@ -8,12 +8,20 @@ import { ChildComponent } from "../child-component/child-component";
   styleUrl: './parent-component.css'
 })
 export class ParentComponent {
-username = "sahchandan781"
-gender: string = ""
+// username = "sahchandan781"
+// gender: string = ""
 
-users = ['chandan', 'anil', 'rohan','ravi']
+// users = ['chandan', 'anil', 'rohan','ravi']
 
-changeGender(val: string){
-  this.gender = val
+// changeGender(val: string){
+//   this.gender = val
+// }
+
+users:string[] |undefined ;
+// Passing data from child component to parent component
+handleUsers(users:string[]){
+  console.log(users);
+  this.users = users
 }
+
 }

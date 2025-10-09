@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output, output } from '@angular/core';
 
 @Component({
   selector: 'app-child-component',
@@ -8,9 +8,17 @@ import { Component, Input } from '@angular/core';
 })
 export class ChildComponent {
 // @Input() user:string =""
-@Input() gender:string =""
-@Input() city:string =""
-@Input() user: string = ""
+// @Input() gender:string =""
+// @Input() city:string =""
+// @Input() user: string = ""
 
+// Passing data from child component to parent component
+
+@Output() getUsers = new EventEmitter()
+ users = ['chandan', 'anil', 'rohan','ravi']
+
+//  ngOnInit(){
+//   this.getUsers.emit(this.users)
+//  }
 
 }

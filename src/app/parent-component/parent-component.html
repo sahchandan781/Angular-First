@@ -14,10 +14,19 @@ city="Noida"></app-child-component> -->
     <option value="female">Female</option>
  </select> -->
 
-<br><br>
+<!-- <br><br>
  <h3>Reuse component</h3>
  @for(user of users; track user){
     <div>
         <app-child-component [user]="user"></app-child-component>
     </div>
- }
+ } -->
+
+
+<h2>Passing data from child component to parent component</h2>
+
+<app-child-component (getUsers)="handleUsers($event)"></app-child-component>
+
+@for(user of users; track user){
+    <h4>{{user}}</h4>
+}
