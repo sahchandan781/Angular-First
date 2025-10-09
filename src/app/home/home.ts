@@ -10,11 +10,13 @@ import { Effectinangular } from '../effectinangular/effectinangular';
 import { LoopContextual } from '../loop-contextual/loop-contextual';
 import { TwoWayBinding } from '../two-way-binding/two-way-binding';
 import { Todolist } from '../todolist/todolist';
+import { CommonModule } from '@angular/common';
+import { CurrencyConverterPipe } from '../pipe/currency-converter-pipe';
 
 
 @Component({
   selector: 'app-home',
-    imports: [Getinputvalue, StyleOptions, Ifelsecondition, Switchcase, Forloop, Signalsinangular, Effectinangular, LoopContextual, TwoWayBinding, Todolist, ],
+    imports: [CurrencyConverterPipe, CommonModule,Getinputvalue, StyleOptions, Ifelsecondition, Switchcase, Forloop, Signalsinangular, Effectinangular, LoopContextual, TwoWayBinding, Todolist, ],
 
 
   templateUrl: './home.html',
@@ -23,6 +25,9 @@ import { Todolist } from '../todolist/todolist';
 export class Home {
 title = 'chandan';
   count: number = 0
+
+  date = new Date();
+  amount= 200;
 
   handleCounter (val:string){
     if(val=='plus'){
