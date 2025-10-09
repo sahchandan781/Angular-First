@@ -12,6 +12,7 @@ import { TwoWayBinding } from '../two-way-binding/two-way-binding';
 import { Todolist } from '../todolist/todolist';
 import { CommonModule } from '@angular/common';
 import { CurrencyConverterPipe } from '../pipe/currency-converter-pipe';
+import { Products } from '../services/products';
 
 
 @Component({
@@ -47,7 +48,7 @@ title = 'chandan';
   }
 // pass data from one page to other
 
-constructor(private router: Router){
+constructor(private router: Router, private productService:Products){
 
 }
 //   goToProfile(){

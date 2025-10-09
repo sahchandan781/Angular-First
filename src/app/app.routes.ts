@@ -9,6 +9,7 @@ import { User } from './user/user';
 import { Profile } from './profile/profile';
 import { Signup } from './signup/signup';
 import { ParentComponent } from './parent-component/parent-component';
+import { ProductsPage } from './products-page/products-page';
 
 export const routes: Routes = [
     {path:"", component: Home},
@@ -19,6 +20,7 @@ export const routes: Routes = [
     {path:"profile", component: Profile},
     {path:"signup", component: Signup},
     {path:"parentChild", component: ParentComponent},
+    {path:"products", component: ProductsPage},
     {path:"**", component: PageNotFound},
 
 ];
