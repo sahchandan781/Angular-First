@@ -6,6 +6,8 @@ import { Contact } from './contact/contact';
 import { PageNotFound } from './page-not-found/page-not-found';
 import { Home } from './home/home';
 import { User } from './user/user';
+import { Profile } from './profile/profile';
+import { Signup } from './signup/signup';
 
 export const routes: Routes = [
     {path:"", component: Home},
@@ -13,7 +15,8 @@ export const routes: Routes = [
     {path:"service", component: Services},
     {path:"contact", component: Contact},
     {path:"user/:id", component: User},
-
+    {path:"profile", component: Profile},
+    {path:"signup", component: Signup},
     {path:"**", component: PageNotFound},
 
 ];

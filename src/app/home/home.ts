@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Router, RouterOutlet } from '@angular/router';
 import { Getinputvalue } from '../getinputvalue/getinputvalue';
 import { StyleOptions } from '../style-options/style-options';
 import { Ifelsecondition } from '../ifelsecondition/ifelsecondition';
@@ -14,7 +14,7 @@ import { Todolist } from '../todolist/todolist';
 
 @Component({
   selector: 'app-home',
-    imports: [RouterOutlet,Getinputvalue, StyleOptions, Ifelsecondition, Switchcase, Forloop, Signalsinangular, Effectinangular, LoopContextual, TwoWayBinding, Todolist, ],
+    imports: [Getinputvalue, StyleOptions, Ifelsecondition, Switchcase, Forloop, Signalsinangular, Effectinangular, LoopContextual, TwoWayBinding, Todolist, ],
 
 
   templateUrl: './home.html',
@@ -40,4 +40,12 @@ title = 'chandan';
       this.count = 0
     }
   }
+// pass data from one page to other
+
+constructor(private router: Router){
+
+}
+//   goToProfile(){
+// this.router.navigate(['profile'],{queryParams:{name:"chandan"}})
+//   } // pass data with button click
 }

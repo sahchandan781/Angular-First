@@ -1,1 +1,31 @@
-<p>signup works!</p>
+<h1>Basic Reactive Forms</h1>
+<form [formGroup]="signupInfo" (ngSubmit)="handleSubmit()">
+  <input type="text" placeholder="Enter Username" formControlName="name" />
+  @if(name?.invalid && name?.touched){
+  <span>this is required field</span>
+  }
+  <br /><br />
+  <input type="email" placeholder="Enter Email" formControlName="email" />
+  <br /><br />
+  <input type="password" placeholder="Enter Password" formControlName="password" />
+  <br /><br />
+
+  <button (click)="getInfo()">Signup</button>
+</form>
+
+<h2></h2>
+
+<h1>Template driven form elements</h1>
+<form action="" #userForm="ngForm" (ngSubmit)="addUser(userForm)">
+  <input type="text" name="fName" placeholder="Enter your father name" ngModel />
+  <br><br>
+  <input type="range" minlength="10" maxlength="200" name="range" ngModel />
+  <select name="Gender" id="" ngModel>
+    <option value="">Select Gender</option>
+    <option value="male">Male</option>
+    <option value="female">Female</option>
+    <option value="other">Other</option>
+  </select>
+  <br><br>
+  <button>submit form</button>
+</form>

@@ -4,7 +4,7 @@
         <li routerLinkActive="active" routerLink="service">Services</li>
         <li routerLinkActive="active" routerLink="about">About</li>
         <li routerLinkActive="active" routerLink="contact">Contact</li>
-        <li routerLinkActive="active" routerLink="profile">Profile</li>
+         <li routerLinkActive="active" [routerLink]="['profile',{name:'chandan'}]">Profile</li> <!-- pass data using router link -->
     </ul>
 </header>
 <router-outlet />
