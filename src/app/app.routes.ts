@@ -8,6 +8,7 @@ import { Home } from './home/home';
 import { User } from './user/user';
 import { Profile } from './profile/profile';
 import { Signup } from './signup/signup';
+import { ParentComponent } from './parent-component/parent-component';
 
 export const routes: Routes = [
     {path:"", component: Home},
@@ -17,6 +18,7 @@ export const routes: Routes = [
     {path:"user/:id", component: User},
     {path:"profile", component: Profile},
     {path:"signup", component: Signup},
+    {path:"parentChild", component: ParentComponent},
     {path:"**", component: PageNotFound},
 
 ];

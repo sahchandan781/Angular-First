@@ -1,0 +1,23 @@
+<p>parent-component works!</p>
+
+<!-- <app-child-component user="chandan"></app-child-component> -->
+
+<!-- passing property  -->
+<!-- <app-child-component [user]="username"
+[gender] = "selectedGender.value"
+city="Noida"></app-child-component> -->
+
+ <!-- send data to child using dropdown -->
+
+ <!-- <select #selectedGender (change)="changeGender(selectedGender.value)" name="gender" id="">
+    <option  value="male">Male</option>
+    <option value="female">Female</option>
+ </select> -->
+
+<br><br>
+ <h3>Reuse component</h3>
+ @for(user of users; track user){
+    <div>
+        <app-child-component [user]="user"></app-child-component>
+    </div>
+ }
