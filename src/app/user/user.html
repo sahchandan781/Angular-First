@@ -1,2 +1,16 @@
-<p>user works!</p>
-<h1>{{employee.name}}</h1>
+<form #userForm="ngForm" (ngSubmit)="addUser(userForm.value)">
+    <input type="text" placeholder="Enter name" name="name" ngModel>
+    <input type="number" placeholder="Enter age" name="age" ngModel>
+    <input type="text" placeholder="Enter email" name="email" ngModel>
+    <button class="create-btn">Submit</button>
+</form>
+
+<div>
+  @for(user of userData; track user.id){
+    <ul>
+        <li>{{user.name}}</li>
+        <li>{{user.age}}</li>
+        <li>{{user.email}}</li>
+    </ul>
+  }
+</div>
