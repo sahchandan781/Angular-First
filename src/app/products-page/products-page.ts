@@ -8,18 +8,31 @@ import { catchError } from 'rxjs';
   templateUrl: './products-page.html',
   styleUrl: './products-page.css'
 })
-export class ProductsPage implements OnInit {
+export class ProductsPage implements OnInit  {
 
-  productData : {
-      name:String;
-      category:string;
-      price:number;
+  // productData : {
+  //     name:String;
+  //     category:string;
+  //     price:number;
 
-    }[] | undefined 
-  constructor(private productServices: Products){ 
+  //   }[] | undefined 
+  // constructor(private productServices: Products){ 
+  // }
+
+  // ngOnInit(){
+  //     this.productData = this.productServices.getProductData();
+  //   }
+
+  productData: any
+
+  constructor(private productService: Products){}
+  ngOnInit(){
+    this.productService.fetchData().subscribe((data:any) => {
+      console.log(data);
+      this.productData = data.products
+      
+      
+    })
   }
 
-  ngOnInit(){
-      this.productData = this.productServices.getProductData();
-    }
 }
